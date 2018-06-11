@@ -1,0 +1,18 @@
+{
+    "name": "noking50/user",
+    "description": "Manage User Data in Session、Cookie、Cache",
+    "keywords": ["laravel"],
+    "authors": [
+        {
+            "name": "noking50",
+            "email": "noking50@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Noking50\\User\\": "src"
+        }
+    }
+}
