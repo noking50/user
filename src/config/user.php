@@ -10,10 +10,12 @@ return [
         'member' => [
             'login' => 'official.member.login',
             'logout' => 'official.member.logout',
+            'datatable' => 'member',
         ],
         'admin' => [
             'login' => 'backend.login',
             'logout' => 'backend.login.logout',
+            'datatable' => 'member_admin',
             'super' => [
                 'id' => 0,
                 'account' => 'manager',
