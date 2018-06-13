@@ -12,7 +12,17 @@
     },
     "autoload": {
         "psr-4": {
-            "Noking50\\User\\": "src"
+            "Noking50\\User\\": "src/User"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Noking50\\User\\UserServiceProvider"
+            ],
+            "aliases": {
+                "User": "Noking50\\User\\Facades\\User"
+            }
         }
     }
 }
