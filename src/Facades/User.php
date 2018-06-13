@@ -1,13 +1,13 @@
 <?php
 
-namespace Noking50\User;
+namespace Noking50\User\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
  * @see Noking50\User\User
  */
-class UserFacade extends Facade {
+class User extends Facade {
 
     /**
      * Get the registered name of the component.

@@ -2,10 +2,10 @@
 
 namespace Noking50\User;
 
-use Illuminate\Session\SessionManager as Session;
-use Illuminate\Cookie\CookieJar as Cookie;
-use Illuminate\Cache\CacheManager as Cache;
-use Illuminate\Log\Logger as Log;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Log;
 
 /**
  * User

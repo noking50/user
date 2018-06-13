@@ -3,7 +3,7 @@
 namespace Noking50\User;
 
 use Illuminate\Support\ServiceProvider;
-use Noking50\Sitemap;
+use Noking50\Sitemap\Facades\Sitemap;
 
 class UserServiceProvider extends ServiceProvider {
 
