@@ -14,6 +14,12 @@ class UserServiceProvider extends ServiceProvider {
      */
     protected $defer = true;
 
+    public function boot() {
+        $this->publishes([
+            __DIR__ . '/../config/user.php' => config_path('user.php'),
+        ]);
+    }
+
     /**
      * Register the service provider.
      *
@@ -22,8 +28,8 @@ class UserServiceProvider extends ServiceProvider {
     public function register() {
         $this->app->singleton('user', function () {
             $root = Sitemap::node()->getRoot();
-            
-            if(!$root->isEmpty()){
+
+            if (!$root->isEmpty()) {
                 return new User($root->prop('login_group'));
             } else {
                 return new User;
